@@ -1,0 +1,37 @@
+using System;
+
+namespace _9._11
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int r = 0;
+            Console.WriteLine("čitatel?");
+            int citatel = Convert.ToInt32(Console.ReadLine());
+            int u = citatel;
+            Console.WriteLine("jmenovatel?");
+            int jmenovatel = Convert.ToInt32(Console.ReadLine());
+            int w = jmenovatel;
+            if (jmenovatel==0)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("jmenovatelem nula, tak určitě");
+                
+            }
+            while (jmenovatel!=0)
+            {
+                r = citatel % jmenovatel;
+                citatel = jmenovatel;
+                jmenovatel = r;
+            }
+
+            u /= citatel;
+            w /= citatel;
+            Console.ForegroundColor= ConsoleColor.Green;
+            
+            Console.WriteLine($"výsledek je {u}/{w}");
+
+        }
+    }
+}
