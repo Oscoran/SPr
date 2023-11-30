@@ -1,0 +1,45 @@
+using System;
+
+namespace _30_11_2023
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            
+            Random rnd = new Random();
+            Console.WriteLine("Počet hodů?");
+            int n = Convert.ToInt32(Console.ReadLine());
+            int[] strany = { 0, 0, 0, 0, 0, 0 };
+            for (int i = 0; i < n; i++)
+            {
+                int kostka = new Random().Next(1, 7);
+                switch (kostka)
+                {
+                    case 1:
+                        strany[0] += 1;
+                        break;
+                    case 2:
+                        strany[1] += 1;
+                        break;
+                    case 3:
+                        strany[2] += 1;
+                        break;
+                    case 4:
+                        strany[3] += 1;
+                        break;
+                    case 5:
+                        strany[4] += 1;
+                        break;
+                    case 6:
+                        strany[5] += 1;
+                        break;
+                }
+
+
+            }
+           
+            Console.WriteLine($"jednička padl {strany[0]}, dvojka {strany[1]},trojka {strany[2]}, čtyřka {strany[3]}, pětka {strany[4]} a šestka {strany[5]} ");
+        }
+    }
+}
