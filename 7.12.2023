@@ -1,0 +1,62 @@
+using System;
+
+namespace _7_12_2023
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int op_vsechny = 0;
+            int op_tri = 0;
+            int op_dva = 0;
+            int op_nic = 0;
+            int op_dvedvojce = 0;
+            for (int i = 0; i < 10; i++)
+            {
+
+                for (int a = 0; a < 10; a++)
+                {
+                    for (int b = 0; b < 10; b++)
+                    {
+                        for (int c = 0; c < 10; c++)
+                        {
+                            if ((i == a) && (i == b) && (i == c))
+                            {
+                                op_vsechny++;
+                            }
+                            else if (((i == a) && (i == b)) || ((i == a) && (i == c)) || ((i == b) && (i == c)) || ((a == b) && (a == c) || (b == c) && (b == i)))
+                            {
+                                op_tri++;
+                            }
+                            else if ((i == a) && (b == c) || (i == b) && (a == c) || (i == c) && (a == b))
+                            {
+                                op_dvedvojce++;
+                            }
+                            else if ((i == a) || (i == b) || (i == c) || (a == b) || (a == c) || (b == c))
+                            {
+                                op_dva++;
+                            }
+                       
+                            else
+                            {
+                                op_nic++;
+                            }
+
+                        }
+                    }
+                }
+
+            }
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine($"všechny stejný {op_vsechny}");
+            Console.WriteLine($"tři stejný {op_tri}");
+            Console.WriteLine($"dva stejný {op_dva}");
+            Console.WriteLine($"dvě dvojice stejný {op_dvedvojce}");
+            Console.WriteLine($"celkem {op_vsechny+op_tri+op_dva}");
+            Console.WriteLine($"neplatné {op_nic}");
+            Console.ForegroundColor = ConsoleColor.White;
+        }
+        
+            
+    }
+}
