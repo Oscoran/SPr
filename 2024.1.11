@@ -1,0 +1,29 @@
+using System;
+using System.IO;
+using System.Text;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            StreamReader sr = new StreamReader("U:\\zadani.txt");
+            string line = sr.ReadLine();
+            int[] hodnoty = new int[2];
+            hodnoty[0] = Convert.ToInt32(line);
+            int vzsledek = 0;
+            while (line != null)
+            {
+                line = sr.ReadLine();
+                hodnoty[1] = Convert.ToInt32(line);
+                if (hodnoty[0] <= hodnoty[1])
+                {
+                    vzsledek++;
+                }
+                hodnoty[0] = hodnoty[1];
+            }
+            Console.WriteLine(vzsledek);
+        }
+    }
+}
