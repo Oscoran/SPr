@@ -1,0 +1,64 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Text;
+
+using System.Linq;
+
+namespace ConsoleApp1
+
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Random rnd = new Random();
+            int delka = rnd.Next(0,10);
+            int[] pole = new int [delka];
+            pole[0] = rnd.Next(-11, 10);
+            int min= pole[0];
+            int max = pole[0];
+            int mins = 0;
+            int maxs =0 ;
+            int pivo = 0;
+            Console.Write(pole[0] + " ");
+            for (int i = 1; i < delka ; i++)
+            {
+                pole [i] = rnd.Next(-11, 10);
+                Console.Write(pole[i]+" " );
+
+            }
+            for (int i = 0; i < delka; i++)
+            {
+                if (pole[i] > max)
+                {
+                    max = pole[i];
+                    maxs = i;
+                }
+                if (pole[i] < min)
+                {
+                    min = pole[i];
+                    mins = i;
+                }
+
+            }
+            
+            Console.WriteLine();
+            Console.WriteLine($"největší je {max} na pozici {maxs+1} a nejmenší je {min} na pozici {mins+1}");
+            pivo = pole[0];
+            pole[0] = pole[mins];
+            pole[mins] = pivo;
+
+            pivo = pole[delka-1];
+            pole[delka-1] = pole[maxs];
+            pole[maxs] = pivo;
+            for (int i = 0; i < delka; i++)
+            {
+                
+                Console.Write(pole[i] + " ");
+
+            }
+            
+        }
+    }
+}
