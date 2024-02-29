@@ -1,0 +1,58 @@
+using System;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // selection sort (n2)
+
+            Random rnd = new Random();
+            int lok = rnd.Next(0,10);
+            int[] arr = new int[lok];
+            for (int i = 0; i < arr.Length; i++)
+            {
+                arr [i] = rnd.Next(-20,21);
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.Write(arr[i]+" ");
+                Console.ForegroundColor = ConsoleColor.White;
+
+            }
+            
+            lok = 0;
+            int pivo = 0;
+            for (int i = 0; i < arr.Length; i++)
+            {
+                int min = arr[i];
+                for (int a = i; a < arr.Length; a++)
+                {
+                    if (arr[a] < min)
+                    {
+                        min = arr[a];
+                        lok = a;
+                    }
+                    
+                }
+                pivo = arr[i];
+                arr[i] = min;
+                arr[lok] = pivo;
+                Console.WriteLine();
+                for (int c  = 0; c < arr.Length; c++)
+                {
+                    Console.ForegroundColor = ConsoleColor.Cyan;
+                    Console.Write(arr[c]+ " ");
+                    Console.ForegroundColor = ConsoleColor.White;
+                }
+                
+                
+
+
+            }
+            
+                
+            
+           
+        }
+    }
+}
