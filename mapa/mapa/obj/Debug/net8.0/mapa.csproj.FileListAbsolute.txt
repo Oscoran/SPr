@@ -1,0 +1,14 @@
+C:\projekty\mapa\mapa\bin\Debug\net8.0\mapa.exe
+C:\projekty\mapa\mapa\bin\Debug\net8.0\mapa.deps.json
+C:\projekty\mapa\mapa\bin\Debug\net8.0\mapa.runtimeconfig.json
+C:\projekty\mapa\mapa\bin\Debug\net8.0\mapa.dll
+C:\projekty\mapa\mapa\bin\Debug\net8.0\mapa.pdb
+C:\projekty\mapa\mapa\obj\Debug\net8.0\mapa.GeneratedMSBuildEditorConfig.editorconfig
+C:\projekty\mapa\mapa\obj\Debug\net8.0\mapa.AssemblyInfoInputs.cache
+C:\projekty\mapa\mapa\obj\Debug\net8.0\mapa.AssemblyInfo.cs
+C:\projekty\mapa\mapa\obj\Debug\net8.0\mapa.csproj.CoreCompileInputs.cache
+C:\projekty\mapa\mapa\obj\Debug\net8.0\mapa.dll
+C:\projekty\mapa\mapa\obj\Debug\net8.0\refint\mapa.dll
+C:\projekty\mapa\mapa\obj\Debug\net8.0\mapa.pdb
+C:\projekty\mapa\mapa\obj\Debug\net8.0\mapa.genruntimeconfig.cache
+C:\projekty\mapa\mapa\obj\Debug\net8.0\ref\mapa.dll
