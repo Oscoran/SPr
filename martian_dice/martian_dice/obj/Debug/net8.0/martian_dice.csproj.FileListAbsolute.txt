@@ -1,0 +1,14 @@
+C:\projekty\martian_dice\martian_dice\bin\Debug\net8.0\martian_dice.exe
+C:\projekty\martian_dice\martian_dice\bin\Debug\net8.0\martian_dice.deps.json
+C:\projekty\martian_dice\martian_dice\bin\Debug\net8.0\martian_dice.runtimeconfig.json
+C:\projekty\martian_dice\martian_dice\bin\Debug\net8.0\martian_dice.dll
+C:\projekty\martian_dice\martian_dice\bin\Debug\net8.0\martian_dice.pdb
+C:\projekty\martian_dice\martian_dice\obj\Debug\net8.0\martian_dice.GeneratedMSBuildEditorConfig.editorconfig
+C:\projekty\martian_dice\martian_dice\obj\Debug\net8.0\martian_dice.AssemblyInfoInputs.cache
+C:\projekty\martian_dice\martian_dice\obj\Debug\net8.0\martian_dice.AssemblyInfo.cs
+C:\projekty\martian_dice\martian_dice\obj\Debug\net8.0\martian_dice.csproj.CoreCompileInputs.cache
+C:\projekty\martian_dice\martian_dice\obj\Debug\net8.0\martian_dice.dll
+C:\projekty\martian_dice\martian_dice\obj\Debug\net8.0\refint\martian_dice.dll
+C:\projekty\martian_dice\martian_dice\obj\Debug\net8.0\martian_dice.pdb
+C:\projekty\martian_dice\martian_dice\obj\Debug\net8.0\martian_dice.genruntimeconfig.cache
+C:\projekty\martian_dice\martian_dice\obj\Debug\net8.0\ref\martian_dice.dll
