@@ -1,0 +1,10 @@
+C:\projekty\martiandice\martiandice\bin\Debug\martiandice.exe.config
+C:\projekty\martiandice\martiandice\bin\Debug\martiandice.exe
+C:\projekty\martiandice\martiandice\bin\Debug\martiandice.pdb
+C:\projekty\martiandice\martiandice\obj\Debug\martiandice.csproj.AssemblyReference.cache
+C:\projekty\martiandice\martiandice\obj\Debug\martiandice.Form1.resources
+C:\projekty\martiandice\martiandice\obj\Debug\martiandice.Properties.Resources.resources
+C:\projekty\martiandice\martiandice\obj\Debug\martiandice.csproj.GenerateResource.cache
+C:\projekty\martiandice\martiandice\obj\Debug\martiandice.csproj.CoreCompileInputs.cache
+C:\projekty\martiandice\martiandice\obj\Debug\martiandice.exe
+C:\projekty\martiandice\martiandice\obj\Debug\martiandice.pdb
