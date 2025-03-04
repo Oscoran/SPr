@@ -13,6 +13,8 @@ namespace martiandice
     public partial class Form1 : Form
     {
         List<PictureBox> pblist = new List<PictureBox>();
+        int[] dieceroll;
+        int[] result=new int[5];
         public Form1()
         {
             InitializeComponent();
@@ -28,29 +30,80 @@ namespace martiandice
                 pictureBox.Image = Properties.Resources.tank;
                 pictureBox.Size = new Size(70, 70);
                 pictureBox.Location = new Point(x, 25);
-                x+= 80;
-                pictureBox.SizeMode= PictureBoxSizeMode.StretchImage;
+                x += 80;
+                pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+                pictureBox.Click += pictureBox1_Click;
                 this.Controls.Add(pictureBox);
                 pblist.Add(pictureBox);
+                
+                
             }
             
         }
 
+
         private void button1_Click(object sender, EventArgs e)
         {
             Dice dice = new Dice();
-            int[] dieceroll = dice.roll(13);
+            dieceroll = dice.roll(13);
+            for (int j = 0; j < result.Length; j++)
+            {
+                result[j] = 0;
+            }
             int position= 0;
             for (int i = 0; i < 5; i++)
             {
-                for (int j   = 0; j < 13; j++)
+
+                for (int j = 0; j < dieceroll[i]; j++)
                 {
                     switch (i)
                     {
                         case 0:
                             pblist[position].Image = Properties.Resources.tank;
+                            result[0]++;
+                            
                             break;
+                        case 1:
+                            pblist[position].Image = Properties.Resources.hen;
+                            result[1]++;
+                            break;
+                        case 2:
+                            pblist[position].Image = Properties.Resources.human;
+                            result[2]++;
+                            break;
+                        case 3:
+                            pblist[position].Image = Properties.Resources.cow;
+                            result[3]++;
+                            break;
+                        case 4:
+                            pblist[position].Image = Properties.Resources.ufo;
+                            result[4]++;
+                            break;
+                        default:
+                            break;
+                        
                     }
+                    position++;
+
+                }
+            }
+            
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            int x = (sender as PictureBox).Location.X;
+            int pozition = x/80;
+            for (int i = 0; i < result.Length; i++)
+            {
+                if (pozition <= result[i])
+                {
+                    MessageBox.Show(i.ToString());
+                    break;
+                }
+                else
+                {
+                   pozition= pozition - result[i];
                 }
             }
             
