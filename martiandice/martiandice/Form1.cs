@@ -15,6 +15,8 @@ namespace martiandice
         List<PictureBox> pblist = new List<PictureBox>();
         int[] dieceroll;
         int[] result=new int[5];
+        int[] countufo = new int[14];
+        int actual = 0;
         public Form1()
         {
             InitializeComponent();
